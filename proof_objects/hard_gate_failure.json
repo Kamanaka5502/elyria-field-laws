@@ -1,0 +1,28 @@
+{
+  "proof_object": "hard_gate_failure",
+  "movement_id": "M-HARD-GATE-001",
+  "description": "A proposed movement where authority standing fails. The movement must resolve to REFUSE and remain non-binding even if other dimensions appear healthy.",
+  "movement": {
+    "origin_state": "S0",
+    "target_state": "S1",
+    "authority_standing": false,
+    "lineage_integrity": true,
+    "evidence_freshness": true,
+    "recovery_viability": true,
+    "consequence_admissibility": true,
+    "witness_replay_validity": true,
+    "trajectory_validity": true,
+    "admissibility_distance": 0.0,
+    "external_resolution_available": false,
+    "lawful_redirect_available": false,
+    "redirect_distance": null,
+    "continued_movement_expands_risk": false
+  },
+  "expected_kernel_resolution": {
+    "decision": "REFUSE",
+    "bind_defined": false,
+    "failed_gate": "authority",
+    "reason": "Non-compensable hard gate failure: authority"
+  },
+  "field_law": "Hard gates are non-compensable. Operational continuity cannot buy authority. BIND(M) is defined only when K(M) = ALLOW."
+}
