@@ -1,0 +1,27 @@
+{
+  "proof_object": "redirect_laundering",
+  "movement_id": "M-REDIRECT-LAUNDERING-001",
+  "description": "A proposed movement outside the admissible region where a claimed redirect does not reduce admissibility distance. The movement must resolve to REFUSE and remain non-binding.",
+  "movement": {
+    "origin_state": "S0",
+    "target_state": "S1",
+    "authority_standing": true,
+    "lineage_integrity": true,
+    "evidence_freshness": true,
+    "recovery_viability": true,
+    "consequence_admissibility": true,
+    "witness_replay_validity": true,
+    "trajectory_validity": true,
+    "admissibility_distance": 0.7,
+    "external_resolution_available": false,
+    "lawful_redirect_available": true,
+    "redirect_distance": 0.9,
+    "continued_movement_expands_risk": false
+  },
+  "expected_kernel_resolution": {
+    "decision": "REFUSE",
+    "bind_defined": false,
+    "reason": "Movement is outside admissible region with no lawful correction path."
+  },
+  "field_law": "Redirect is lawful only if delta(M_redirected) < delta(M_original). If redirect does not reduce admissibility distance, it is not repair; it is laundering."
+}
