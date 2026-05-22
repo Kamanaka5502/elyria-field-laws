@@ -1,0 +1,53 @@
+{
+  "proof_object": "valid_proof_surface",
+  "surface_id": "PS-VALID-001",
+  "description": "A complete proof surface preserving movement, standing, protected effect, kernel decision, receipt, and legitimacy replay.",
+  "movement_object": {
+    "movement_id": "M-VALID-PROOF-001",
+    "origin_state": "S0",
+    "target_state": "S1"
+  },
+  "lawful_region_state": {
+    "inside_R": true,
+    "A_z": 0.82,
+    "Phi_z": 0.41,
+    "U_z": 1
+  },
+  "standing_basis": {
+    "authority_standing": true,
+    "evidence_freshness": true,
+    "lineage_integrity": true,
+    "capacity_support": true,
+    "route_standing": true,
+    "transfer_standing": true,
+    "witness_continuity": true,
+    "law_version_alignment": true
+  },
+  "kernel_decision": "REFUSE",
+  "failure_class": "AUTHORITY_DECAY",
+  "protected_effect_map": {
+    "protected_effect_id": "E-PROTECTED-001",
+    "effect_boundary": "protected_effect_before_commit"
+  },
+  "effect_prevention_result": {
+    "effect_formed": false,
+    "prevention_proven": true
+  },
+  "receipt_object": {
+    "receipt_id": "REC-VALID-001",
+    "movement_hash": "hash-movement",
+    "protected_effect_hash": "hash-protected-effect",
+    "kernel_resolution_hash": "hash-kernel-resolution",
+    "replay_token": "replay-token-valid-001"
+  },
+  "legitimacy_replay_object": {
+    "verdict": "LEGITIMACY_REPLAY_VALID",
+    "terminal_outcome_present": true,
+    "admissibility_basis_reconstructed": true
+  },
+  "expected_proof_surface_resolution": {
+    "verdict": "PROOF_SURFACE_VALID",
+    "proof_surface_valid": true
+  },
+  "field_law": "A governance claim is admissible only when the proof surface preserves movement, current standing, protected effect, decision, receipt, and legitimacy replay."
+}
