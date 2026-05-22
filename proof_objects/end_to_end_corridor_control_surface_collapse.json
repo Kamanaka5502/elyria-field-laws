@@ -1,0 +1,60 @@
+{
+  "proof_object": "end_to_end_corridor_control_surface_collapse",
+  "corridor_id": "C-END-TO-END-COLLAPSE-001",
+  "description": "A bounded corridor that preserves some execution artifacts but collapses into CONTROL_SURFACE_ONLY because protected effect governance, legitimacy replay, or failure semantics are incomplete.",
+  "movement": {
+    "movement_id": "M-CORRIDOR-COLLAPSE-001",
+    "origin_state": "S0",
+    "target_state": "S1",
+    "authority_standing": false,
+    "lineage_integrity": true,
+    "evidence_freshness": true,
+    "recovery_viability": true,
+    "consequence_admissibility": true,
+    "witness_replay_validity": true,
+    "trajectory_validity": true,
+    "admissibility_distance": 0.0
+  },
+  "lawful_region_state": {
+    "state_id": "Z-CORRIDOR-COLLAPSE-001",
+    "A_z": 1.0,
+    "Phi_z": 1.0,
+    "U_z": 1,
+    "expected_region_verdict": "INSIDE_R"
+  },
+  "kernel_resolution": {
+    "expected_decision": "REFUSE",
+    "bind_defined": false,
+    "failure_class": "AUTHORITY_INVALID"
+  },
+  "protected_effect": {
+    "protected_effect_id": "E-CORRIDOR-COLLAPSE-001",
+    "effect_formed": true,
+    "expected_effect_verdict": "EFFECT_VIOLATION"
+  },
+  "receipt": {
+    "receipt_id": "REC-CORRIDOR-COLLAPSE-001",
+    "receipt_bound_to_movement": true,
+    "receipt_bound_to_effect": true,
+    "replay_token": "replay-token-corridor-collapse-001"
+  },
+  "legitimacy_replay": {
+    "expected_replay_verdict": "EXECUTION_REPLAY_ONLY",
+    "terminal_outcome_present": true,
+    "admissibility_basis_reconstructed": false,
+    "missing_fields": [
+      "authority_hash",
+      "trajectory_hash"
+    ]
+  },
+  "proof_surface": {
+    "expected_verdict": "CONTROL_SURFACE_ONLY",
+    "proof_surface_valid": false
+  },
+  "collapse_reasons": [
+    "Kernel decision is non-allow but protected effect formed.",
+    "Replay preserves terminal outcome without full admissibility reconstruction.",
+    "The corridor contains execution artifacts but fails consequence-governance proof."
+  ],
+  "field_law": "Managed execution is not proof of governed movement. If non-allow movement forms protected effect, the corridor collapses into CONTROL_SURFACE_ONLY."
+}
