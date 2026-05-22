@@ -1,0 +1,31 @@
+{
+  "proof_object": "legitimacy_replay_valid",
+  "replay_id": "R-LEGIT-001",
+  "description": "A replay object that preserves terminal outcome and the admissibility basis required for legitimacy replay.",
+  "terminal_outcome_hash": "hash-terminal-outcome-001",
+  "legitimacy_fields": {
+    "movement_hash": "hash-movement",
+    "origin_state_hash": "hash-origin-state",
+    "target_state_hash": "hash-target-state",
+    "authority_hash": "hash-authority",
+    "evidence_hash": "hash-evidence",
+    "lineage_hash": "hash-lineage",
+    "recovery_hash": "hash-recovery",
+    "consequence_hash": "hash-consequence",
+    "witness_hash": "hash-witness",
+    "trajectory_hash": "hash-trajectory",
+    "admissibility_distance_hash": "hash-admissibility-distance",
+    "law_version_hash": "hash-law-version",
+    "kernel_resolution_hash": "hash-kernel-resolution",
+    "protected_effect_hash": "hash-protected-effect"
+  },
+  "original_decision": "ALLOW",
+  "reconstructed_decision": "ALLOW",
+  "original_bind_status": true,
+  "reconstructed_bind_status": true,
+  "expected_replay_resolution": {
+    "verdict": "LEGITIMACY_REPLAY_VALID",
+    "legitimacy_replay_valid": true
+  },
+  "field_law": "Execution replay and legitimacy replay are not the same proof class. This object preserves admissibility basis, not only terminal outcome."
+}
