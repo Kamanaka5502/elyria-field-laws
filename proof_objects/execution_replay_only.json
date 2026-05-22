@@ -1,0 +1,36 @@
+{
+  "proof_object": "execution_replay_only",
+  "replay_id": "R-EXEC-ONLY-001",
+  "description": "A replay object that preserves terminal outcome but fails to reconstruct the admissibility basis required for legitimacy replay.",
+  "terminal_outcome_hash": "hash-terminal-outcome-001",
+  "legitimacy_fields": {
+    "movement_hash": "hash-movement",
+    "origin_state_hash": "hash-origin-state",
+    "target_state_hash": "hash-target-state",
+    "authority_hash": null,
+    "evidence_hash": null,
+    "lineage_hash": "hash-lineage",
+    "recovery_hash": "hash-recovery",
+    "consequence_hash": "hash-consequence",
+    "witness_hash": "hash-witness",
+    "trajectory_hash": null,
+    "admissibility_distance_hash": "hash-admissibility-distance",
+    "law_version_hash": "hash-law-version",
+    "kernel_resolution_hash": "hash-kernel-resolution",
+    "protected_effect_hash": "hash-protected-effect"
+  },
+  "original_decision": "REFUSE",
+  "reconstructed_decision": "REFUSE",
+  "original_bind_status": false,
+  "reconstructed_bind_status": false,
+  "expected_replay_resolution": {
+    "verdict": "EXECUTION_REPLAY_ONLY",
+    "legitimacy_replay_valid": false,
+    "missing_fields": [
+      "authority_hash",
+      "evidence_hash",
+      "trajectory_hash"
+    ]
+  },
+  "field_law": "Same terminal outcome is not enough. Replay must reconstruct admissibility state, authority, evidence, trajectory, and lawful movement basis."
+}
