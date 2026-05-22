@@ -1,0 +1,50 @@
+{
+  "proof_object": "end_to_end_corridor_valid",
+  "corridor_id": "C-END-TO-END-VALID-001",
+  "description": "A bounded consequence-governance corridor preserving movement, lawful-region state, kernel decision, protected-effect status, receipt, legitimacy replay, and proof-surface verdict.",
+  "movement": {
+    "movement_id": "M-CORRIDOR-VALID-001",
+    "origin_state": "S0",
+    "target_state": "S1",
+    "authority_standing": true,
+    "lineage_integrity": true,
+    "evidence_freshness": true,
+    "recovery_viability": true,
+    "consequence_admissibility": true,
+    "witness_replay_validity": true,
+    "trajectory_validity": true,
+    "admissibility_distance": 0.0
+  },
+  "lawful_region_state": {
+    "state_id": "Z-CORRIDOR-VALID-001",
+    "A_z": 1.0,
+    "Phi_z": 1.0,
+    "U_z": 1,
+    "expected_region_verdict": "INSIDE_R"
+  },
+  "kernel_resolution": {
+    "expected_decision": "ALLOW",
+    "bind_defined": true
+  },
+  "protected_effect": {
+    "protected_effect_id": "E-CORRIDOR-VALID-001",
+    "effect_formed": true,
+    "expected_effect_verdict": "EFFECT_ALLOWED"
+  },
+  "receipt": {
+    "receipt_id": "REC-CORRIDOR-VALID-001",
+    "receipt_bound_to_movement": true,
+    "receipt_bound_to_effect": true,
+    "replay_token": "replay-token-corridor-valid-001"
+  },
+  "legitimacy_replay": {
+    "expected_replay_verdict": "LEGITIMACY_REPLAY_VALID",
+    "terminal_outcome_present": true,
+    "admissibility_basis_reconstructed": true
+  },
+  "proof_surface": {
+    "expected_verdict": "PROOF_SURFACE_VALID",
+    "proof_surface_valid": true
+  },
+  "field_law": "One corridor. One protected effect. One replayable proof. A valid corridor preserves movement, standing, kernel decision, protected effect, receipt, legitimacy replay, and proof-surface verdict."
+}
