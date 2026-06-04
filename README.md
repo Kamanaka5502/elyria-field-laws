@@ -7,6 +7,13 @@
   <img src="https://img.shields.io/badge/Proof_Surface-Replayable-C98C5A?style=for-the-badge&labelColor=07111F" alt="Proof Surface Replayable" />
 </p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/ALLOW-Binding-00E5FF?style=flat-square&labelColor=07111F" alt="ALLOW Binding" />
+  <img src="https://img.shields.io/badge/REDIRECT-Repair-C98C5A?style=flat-square&labelColor=07111F" alt="REDIRECT Repair" />
+  <img src="https://img.shields.io/badge/ESCALATE-Non--Binding-00E5FF?style=flat-square&labelColor=07111F" alt="ESCALATE Non-Binding" />
+  <img src="https://img.shields.io/badge/REFUSE-Fail_Closed-C98C5A?style=flat-square&labelColor=07111F" alt="REFUSE Fail Closed" />
+</p>
+
 <p align="center"><strong>Consequence-bound movement governance with executable proof semantics.</strong></p>
 
 > The proof is what cannot happen.
@@ -24,6 +31,11 @@ This repository defines the field laws, runtime surfaces, proof objects, latency
 ---
 
 ## ✦ Core Invariants
+
+<p align="center">
+  <img src="https://img.shields.io/badge/BIND(M)-Only_when_K(M)%3D%3DALLOW-00E5FF?style=for-the-badge&labelColor=07111F" alt="Bind only when allowed" />
+  <img src="https://img.shields.io/badge/Protected_Effect-Does_Not_Form_On_Failure-C98C5A?style=for-the-badge&labelColor=07111F" alt="Protected effect does not form on failure" />
+</p>
 
 ```text
 BIND(M) is defined only when K(M) = ALLOW.
@@ -56,6 +68,10 @@ standing_t0 != standing_t1 unless continuity is proven
 ---
 
 ## ✦ What This Is
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Category-Lawful_Consequence--Resolution_Geometry-00E5FF?style=for-the-badge&labelColor=07111F" alt="Category" />
+</p>
 
 This repository is a layered proof corpus for:
 
@@ -93,6 +109,11 @@ ordinary control software
 
 ## ✦ Corpus Entry Points
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Doctrine-Corpus_Indexed-C98C5A?style=flat-square&labelColor=07111F" alt="Doctrine corpus indexed" />
+  <img src="https://img.shields.io/badge/Proof_Surface-Minimum_Defined-00E5FF?style=flat-square&labelColor=07111F" alt="Proof surface minimum defined" />
+</p>
+
 Start here:
 
 ```text
@@ -129,6 +150,11 @@ DASHBOARD_PROOF_SURFACE_SPEC.md
 
 ## ✦ Runtime Modules
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Runtime-Executable-00E5FF?style=for-the-badge&labelColor=07111F" alt="Runtime executable" />
+  <img src="https://img.shields.io/badge/Action_Firewall-Fail_Closed-C98C5A?style=for-the-badge&labelColor=07111F" alt="Action firewall fail closed" />
+</p>
+
 ```text
 runtime/kernel.py
 runtime/admissibility_region.py
@@ -159,6 +185,11 @@ local performance harness
 ---
 
 ## ✦ Tests
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Tests-Boundary_Proof-00E5FF?style=for-the-badge&labelColor=07111F" alt="Boundary proof tests" />
+  <img src="https://img.shields.io/badge/Control_Surface-Collapse_Detected-C98C5A?style=for-the-badge&labelColor=07111F" alt="Control surface collapse detected" />
+</p>
 
 Run:
 
@@ -193,6 +224,11 @@ control-surface collapse
 ---
 
 ## ✦ 34 ms Hot Path
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Compiled_Target-34_ms-00E5FF?style=for-the-badge&labelColor=07111F" alt="34 ms compiled target" />
+  <img src="https://img.shields.io/badge/Outer_Failsafe-200_ms-C98C5A?style=for-the-badge&labelColor=07111F" alt="200 ms outer failsafe" />
+</p>
 
 The 34 ms profile is a compiled corridor target, not a general-purpose pipeline claim.
 
@@ -236,6 +272,11 @@ uncertain_current_standing -> ALLOW
 
 ## ✦ Proof Objects
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Proof_Objects-What_May_Bind-00E5FF?style=flat-square&labelColor=07111F" alt="What may bind" />
+  <img src="https://img.shields.io/badge/Proof_Objects-What_Cannot_Bind-C98C5A?style=flat-square&labelColor=07111F" alt="What cannot bind" />
+</p>
+
 ```text
 proof_objects/valid_movement.json
 proof_objects/hard_gate_failure.json
@@ -257,6 +298,12 @@ what cannot bind
 ---
 
 ## ✦ Event Intake to Gate
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Intent-Canonicalized-00E5FF?style=flat-square&labelColor=07111F" alt="Intent canonicalized" />
+  <img src="https://img.shields.io/badge/Standing-Assembled-C98C5A?style=flat-square&labelColor=07111F" alt="Standing assembled" />
+  <img src="https://img.shields.io/badge/Consequence-Boundary_Resolved-00E5FF?style=flat-square&labelColor=07111F" alt="Consequence boundary resolved" />
+</p>
 
 The pipeline is:
 
@@ -297,6 +344,11 @@ The proof surface decides whether governance was proven.
 
 ## ✦ Dashboard Rule
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Dashboard-Witness_Projection-00E5FF?style=for-the-badge&labelColor=07111F" alt="Dashboard witness projection" />
+  <img src="https://img.shields.io/badge/Gate-Consequence_Resolver-C98C5A?style=for-the-badge&labelColor=07111F" alt="Gate consequence resolver" />
+</p>
+
 ```text
 Dashboard = witness projection
 Gate = consequence resolver
@@ -311,6 +363,10 @@ It does not create governance.
 ---
 
 ## ✦ Final Doctrine
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Proof-What_Cannot_Happen-00E5FF?style=for-the-badge&labelColor=07111F" alt="Proof is what cannot happen" />
+</p>
 
 The proof is not the layer.
 
