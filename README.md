@@ -2,11 +2,14 @@
 
 ![Elyria Field Laws — Governed Cognitive Growth](assets/elyria-governed-cognitive-growth.jpg)
 
-**Consequence-bound movement governance with executable proof semantics.**
+<p align="center">
+  <img src="https://img.shields.io/badge/Consequence_Boundary-Governed-00E5FF?style=for-the-badge&labelColor=07111F" alt="Consequence Boundary Governed" />
+  <img src="https://img.shields.io/badge/Proof_Surface-Replayable-C98C5A?style=for-the-badge&labelColor=07111F" alt="Proof Surface Replayable" />
+</p>
+
+<p align="center"><strong>Consequence-bound movement governance with executable proof semantics.</strong></p>
 
 > The proof is what cannot happen.
-
-**Consequence-bound movement governance with executable proof semantics.**
 
 Elyria Field Laws is a proof corpus and runtime skeleton for deciding whether proposed movement may lawfully bind consequence.
 
@@ -20,7 +23,7 @@ This repository defines the field laws, runtime surfaces, proof objects, latency
 
 ---
 
-## Core Invariants
+## ✦ Core Invariants
 
 ```text
 BIND(M) is defined only when K(M) = ALLOW.
@@ -52,7 +55,7 @@ standing_t0 != standing_t1 unless continuity is proven
 
 ---
 
-## What This Is
+## ✦ What This Is
 
 This repository is a layered proof corpus for:
 
@@ -88,7 +91,7 @@ ordinary control software
 
 ---
 
-## Corpus Entry Points
+## ✦ Corpus Entry Points
 
 Start here:
 
@@ -124,7 +127,7 @@ DASHBOARD_PROOF_SURFACE_SPEC.md
 
 ---
 
-## Runtime Modules
+## ✦ Runtime Modules
 
 ```text
 runtime/kernel.py
@@ -136,6 +139,7 @@ runtime/proof_surface.py
 runtime/corridor_runner.py
 runtime/hot_path_34ms.py
 runtime/perf_34ms_harness.py
+runtime/action_firewall.py
 ```
 
 Runtime coverage:
@@ -154,7 +158,7 @@ local performance harness
 
 ---
 
-## Tests
+## ✦ Tests
 
 Run:
 
@@ -188,7 +192,7 @@ control-surface collapse
 
 ---
 
-## 34 ms Hot Path
+## ✦ 34 ms Hot Path
 
 The 34 ms profile is a compiled corridor target, not a general-purpose pipeline claim.
 
@@ -230,7 +234,7 @@ uncertain_current_standing -> ALLOW
 
 ---
 
-## Proof Objects
+## ✦ Proof Objects
 
 ```text
 proof_objects/valid_movement.json
@@ -252,7 +256,7 @@ what cannot bind
 
 ---
 
-## Event Intake to Gate
+## ✦ Event Intake to Gate
 
 The pipeline is:
 
@@ -291,7 +295,7 @@ The proof surface decides whether governance was proven.
 
 ---
 
-## Dashboard Rule
+## ✦ Dashboard Rule
 
 ```text
 Dashboard = witness projection
@@ -306,7 +310,7 @@ It does not create governance.
 
 ---
 
-## Final Doctrine
+## ✦ Final Doctrine
 
 The proof is not the layer.
 
