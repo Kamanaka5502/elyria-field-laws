@@ -8,6 +8,12 @@
 </p>
 
 <p align="center">
+  <a href="FIELD_LAWS.md"><img src="https://img.shields.io/badge/Field_Laws-Open-00E5FF?style=flat-square&labelColor=07111F" alt="Open Field Laws" /></a>
+  <a href="BUYER_README.md"><img src="https://img.shields.io/badge/Buyer_Readme-Open-C98C5A?style=flat-square&labelColor=07111F" alt="Open Buyer Readme" /></a>
+  <a href="FIELD_LAWS_VS_EXISTING_GOVERNANCE.md"><img src="https://img.shields.io/badge/Category_Comparison-Open-00E5FF?style=flat-square&labelColor=07111F" alt="Open Category Comparison" /></a>
+</p>
+
+<p align="center">
   <img src="https://img.shields.io/badge/ALLOW-Binding-00E5FF?style=flat-square&labelColor=07111F" alt="ALLOW Binding" />
   <img src="https://img.shields.io/badge/REDIRECT-Repair-C98C5A?style=flat-square&labelColor=07111F" alt="REDIRECT Repair" />
   <img src="https://img.shields.io/badge/ESCALATE-Non--Binding-00E5FF?style=flat-square&labelColor=07111F" alt="ESCALATE Non-Binding" />
@@ -110,63 +116,53 @@ ordinary control software
 ## ✦ Corpus Entry Points
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Doctrine-Corpus_Indexed-C98C5A?style=flat-square&labelColor=07111F" alt="Doctrine corpus indexed" />
-  <img src="https://img.shields.io/badge/Proof_Surface-Minimum_Defined-00E5FF?style=flat-square&labelColor=07111F" alt="Proof surface minimum defined" />
+  <a href="FIELD_LAW_CORPUS_INDEX.md"><img src="https://img.shields.io/badge/Corpus_Index-Open-00E5FF?style=flat-square&labelColor=07111F" alt="Open Corpus Index" /></a>
+  <a href="CORPUS_READINESS_STATEMENT.md"><img src="https://img.shields.io/badge/Readiness_Statement-Open-C98C5A?style=flat-square&labelColor=07111F" alt="Open Readiness Statement" /></a>
+  <a href="PROOF_SURFACE_MINIMUM.md"><img src="https://img.shields.io/badge/Proof_Surface_Minimum-Open-00E5FF?style=flat-square&labelColor=07111F" alt="Open Proof Surface Minimum" /></a>
 </p>
 
-Start here:
-
-```text
-FIELD_LAW_CORPUS_INDEX.md
-CORPUS_READINESS_STATEMENT.md
-PROOF_SURFACE_MINIMUM.md
-END_TO_END_CORRIDOR_PROOF_PACK.md
-CORRIDOR_ACCEPTANCE_CRITERIA.md
-```
+- [FIELD_LAW_CORPUS_INDEX.md](FIELD_LAW_CORPUS_INDEX.md)
+- [CORPUS_READINESS_STATEMENT.md](CORPUS_READINESS_STATEMENT.md)
+- [PROOF_SURFACE_MINIMUM.md](PROOF_SURFACE_MINIMUM.md)
+- [END_TO_END_CORRIDOR_PROOF_PACK.md](END_TO_END_CORRIDOR_PROOF_PACK.md)
+- [CORRIDOR_ACCEPTANCE_CRITERIA.md](CORRIDOR_ACCEPTANCE_CRITERIA.md)
 
 Event-to-gate pipeline:
 
-```text
-ENVELOPE_TO_GATE_PIPELINE.md
-EVENT_INTAKE_TO_GATE_PIPELINE.md
-```
+- [ENVELOPE_TO_GATE_PIPELINE.md](ENVELOPE_TO_GATE_PIPELINE.md)
+- [EVENT_INTAKE_TO_GATE_PIPELINE.md](EVENT_INTAKE_TO_GATE_PIPELINE.md)
 
 Latency and hot-path profile:
 
-```text
-LATENCY_AND_LAG_BUDGET.md
-FAST_FAIL_CLOSED_LATENCY_PROFILE.md
-ULTRA_LOW_LATENCY_34MS_PROFILE.md
-34MS_HOT_PATH_RELEASE_LOCK.md
-```
+- [LATENCY_AND_LAG_BUDGET.md](LATENCY_AND_LAG_BUDGET.md)
+- [FAST_FAIL_CLOSED_LATENCY_PROFILE.md](FAST_FAIL_CLOSED_LATENCY_PROFILE.md)
+- [ULTRA_LOW_LATENCY_34MS_PROFILE.md](ULTRA_LOW_LATENCY_34MS_PROFILE.md)
+- [34MS_HOT_PATH_RELEASE_LOCK.md](34MS_HOT_PATH_RELEASE_LOCK.md)
 
 Dashboard/operator surface:
 
-```text
-DASHBOARD_PROOF_SURFACE_SPEC.md
-```
+- [DASHBOARD_PROOF_SURFACE_SPEC.md](DASHBOARD_PROOF_SURFACE_SPEC.md)
 
 ---
 
 ## ✦ Runtime Modules
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Runtime-Executable-00E5FF?style=for-the-badge&labelColor=07111F" alt="Runtime executable" />
-  <img src="https://img.shields.io/badge/Action_Firewall-Fail_Closed-C98C5A?style=for-the-badge&labelColor=07111F" alt="Action firewall fail closed" />
+  <a href="runtime/kernel.py"><img src="https://img.shields.io/badge/Kernel-Open-00E5FF?style=flat-square&labelColor=07111F" alt="Open Kernel" /></a>
+  <a href="runtime/action_firewall.py"><img src="https://img.shields.io/badge/Action_Firewall-Open-C98C5A?style=flat-square&labelColor=07111F" alt="Open Action Firewall" /></a>
+  <a href="runtime/replay_verifier.py"><img src="https://img.shields.io/badge/Replay_Verifier-Open-00E5FF?style=flat-square&labelColor=07111F" alt="Open Replay Verifier" /></a>
 </p>
 
-```text
-runtime/kernel.py
-runtime/admissibility_region.py
-runtime/partial_binding.py
-runtime/replay_verifier.py
-runtime/effect_guard.py
-runtime/proof_surface.py
-runtime/corridor_runner.py
-runtime/hot_path_34ms.py
-runtime/perf_34ms_harness.py
-runtime/action_firewall.py
-```
+- [runtime/kernel.py](runtime/kernel.py)
+- [runtime/admissibility_region.py](runtime/admissibility_region.py)
+- [runtime/partial_binding.py](runtime/partial_binding.py)
+- [runtime/replay_verifier.py](runtime/replay_verifier.py)
+- [runtime/effect_guard.py](runtime/effect_guard.py)
+- [runtime/proof_surface.py](runtime/proof_surface.py)
+- [runtime/corridor_runner.py](runtime/corridor_runner.py)
+- [runtime/hot_path_34ms.py](runtime/hot_path_34ms.py)
+- [runtime/perf_34ms_harness.py](runtime/perf_34ms_harness.py)
+- [runtime/action_firewall.py](runtime/action_firewall.py)
 
 Runtime coverage:
 
@@ -187,8 +183,8 @@ local performance harness
 ## ✦ Tests
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Tests-Boundary_Proof-00E5FF?style=for-the-badge&labelColor=07111F" alt="Boundary proof tests" />
-  <img src="https://img.shields.io/badge/Control_Surface-Collapse_Detected-C98C5A?style=for-the-badge&labelColor=07111F" alt="Control surface collapse detected" />
+  <a href="tests/test_field_laws.py"><img src="https://img.shields.io/badge/Boundary_Tests-Open-00E5FF?style=flat-square&labelColor=07111F" alt="Open Boundary Tests" /></a>
+  <a href="tests/test_hot_path_34ms.py"><img src="https://img.shields.io/badge/Hot_Path_Tests-Open-C98C5A?style=flat-square&labelColor=07111F" alt="Open Hot Path Tests" /></a>
 </p>
 
 Run:
@@ -199,15 +195,13 @@ python -m pytest -q
 
 Key test files:
 
-```text
-tests/test_field_laws.py
-tests/test_partial_binding.py
-tests/test_replay_verifier.py
-tests/test_effect_guard.py
-tests/test_proof_surface.py
-tests/test_corridor_runner.py
-tests/test_hot_path_34ms.py
-```
+- [tests/test_field_laws.py](tests/test_field_laws.py)
+- [tests/test_partial_binding.py](tests/test_partial_binding.py)
+- [tests/test_replay_verifier.py](tests/test_replay_verifier.py)
+- [tests/test_effect_guard.py](tests/test_effect_guard.py)
+- [tests/test_proof_surface.py](tests/test_proof_surface.py)
+- [tests/test_corridor_runner.py](tests/test_corridor_runner.py)
+- [tests/test_hot_path_34ms.py](tests/test_hot_path_34ms.py)
 
 The tests prove that the system distinguishes:
 
@@ -226,8 +220,8 @@ control-surface collapse
 ## ✦ 34 ms Hot Path
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Compiled_Target-34_ms-00E5FF?style=for-the-badge&labelColor=07111F" alt="34 ms compiled target" />
-  <img src="https://img.shields.io/badge/Outer_Failsafe-200_ms-C98C5A?style=for-the-badge&labelColor=07111F" alt="200 ms outer failsafe" />
+  <a href="ULTRA_LOW_LATENCY_34MS_PROFILE.md"><img src="https://img.shields.io/badge/Compiled_Target-34_ms-00E5FF?style=for-the-badge&labelColor=07111F" alt="34 ms compiled target" /></a>
+  <a href="34MS_HOT_PATH_RELEASE_LOCK.md"><img src="https://img.shields.io/badge/Release_Lock-Open-C98C5A?style=for-the-badge&labelColor=07111F" alt="Open Release Lock" /></a>
 </p>
 
 The 34 ms profile is a compiled corridor target, not a general-purpose pipeline claim.
@@ -273,20 +267,19 @@ uncertain_current_standing -> ALLOW
 ## ✦ Proof Objects
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Proof_Objects-What_May_Bind-00E5FF?style=flat-square&labelColor=07111F" alt="What may bind" />
-  <img src="https://img.shields.io/badge/Proof_Objects-What_Cannot_Bind-C98C5A?style=flat-square&labelColor=07111F" alt="What cannot bind" />
+  <a href="proof_objects/valid_movement.json"><img src="https://img.shields.io/badge/Valid_Movement-Open-00E5FF?style=flat-square&labelColor=07111F" alt="Open Valid Movement" /></a>
+  <a href="proof_objects/hard_gate_failure.json"><img src="https://img.shields.io/badge/Hard_Gate_Failure-Open-C98C5A?style=flat-square&labelColor=07111F" alt="Open Hard Gate Failure" /></a>
+  <a href="proof_objects/legitimacy_replay_valid.json"><img src="https://img.shields.io/badge/Legitimacy_Replay-Open-00E5FF?style=flat-square&labelColor=07111F" alt="Open Legitimacy Replay" /></a>
 </p>
 
-```text
-proof_objects/valid_movement.json
-proof_objects/hard_gate_failure.json
-proof_objects/redirect_laundering.json
-proof_objects/legitimacy_replay_valid.json
-proof_objects/execution_replay_only.json
-proof_objects/valid_proof_surface.json
-proof_objects/end_to_end_corridor_valid.json
-proof_objects/end_to_end_corridor_control_surface_collapse.json
-```
+- [proof_objects/valid_movement.json](proof_objects/valid_movement.json)
+- [proof_objects/hard_gate_failure.json](proof_objects/hard_gate_failure.json)
+- [proof_objects/redirect_laundering.json](proof_objects/redirect_laundering.json)
+- [proof_objects/legitimacy_replay_valid.json](proof_objects/legitimacy_replay_valid.json)
+- [proof_objects/execution_replay_only.json](proof_objects/execution_replay_only.json)
+- [proof_objects/valid_proof_surface.json](proof_objects/valid_proof_surface.json)
+- [proof_objects/end_to_end_corridor_valid.json](proof_objects/end_to_end_corridor_valid.json)
+- [proof_objects/end_to_end_corridor_control_surface_collapse.json](proof_objects/end_to_end_corridor_control_surface_collapse.json)
 
 The proof objects serialize both sides of the boundary:
 
@@ -300,9 +293,9 @@ what cannot bind
 ## ✦ Event Intake to Gate
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Intent-Canonicalized-00E5FF?style=flat-square&labelColor=07111F" alt="Intent canonicalized" />
-  <img src="https://img.shields.io/badge/Standing-Assembled-C98C5A?style=flat-square&labelColor=07111F" alt="Standing assembled" />
-  <img src="https://img.shields.io/badge/Consequence-Boundary_Resolved-00E5FF?style=flat-square&labelColor=07111F" alt="Consequence boundary resolved" />
+  <a href="EVENT_INTAKE_TO_GATE_PIPELINE.md"><img src="https://img.shields.io/badge/Intent-Canonicalized-00E5FF?style=flat-square&labelColor=07111F" alt="Intent canonicalized" /></a>
+  <a href="ENVELOPE_TO_GATE_PIPELINE.md"><img src="https://img.shields.io/badge/Standing-Assembled-C98C5A?style=flat-square&labelColor=07111F" alt="Standing assembled" /></a>
+  <a href="DASHBOARD_PROOF_SURFACE_SPEC.md"><img src="https://img.shields.io/badge/Consequence-Boundary_Resolved-00E5FF?style=flat-square&labelColor=07111F" alt="Consequence boundary resolved" /></a>
 </p>
 
 The pipeline is:
@@ -345,8 +338,8 @@ The proof surface decides whether governance was proven.
 ## ✦ Dashboard Rule
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Dashboard-Witness_Projection-00E5FF?style=for-the-badge&labelColor=07111F" alt="Dashboard witness projection" />
-  <img src="https://img.shields.io/badge/Gate-Consequence_Resolver-C98C5A?style=for-the-badge&labelColor=07111F" alt="Gate consequence resolver" />
+  <a href="DASHBOARD_PROOF_SURFACE_SPEC.md"><img src="https://img.shields.io/badge/Dashboard-Witness_Projection-00E5FF?style=for-the-badge&labelColor=07111F" alt="Dashboard witness projection" /></a>
+  <a href="runtime/kernel.py"><img src="https://img.shields.io/badge/Gate-Consequence_Resolver-C98C5A?style=for-the-badge&labelColor=07111F" alt="Gate consequence resolver" /></a>
 </p>
 
 ```text
@@ -365,7 +358,7 @@ It does not create governance.
 ## ✦ Final Doctrine
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Proof-What_Cannot_Happen-00E5FF?style=for-the-badge&labelColor=07111F" alt="Proof is what cannot happen" />
+  <a href="FIELD_LAWS.md"><img src="https://img.shields.io/badge/Proof-What_Cannot_Happen-00E5FF?style=for-the-badge&labelColor=07111F" alt="Proof is what cannot happen" /></a>
 </p>
 
 The proof is not the layer.
