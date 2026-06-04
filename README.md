@@ -1,5 +1,11 @@
 # Elyria Field Laws
 
+![Elyria Field Laws — Governed Cognitive Growth](assets/elyria-governed-cognitive-growth.jpg)
+
+**Consequence-bound movement governance with executable proof semantics.**
+
+> The proof is what cannot happen.
+
 **Consequence-bound movement governance with executable proof semantics.**
 
 Elyria Field Laws is a proof corpus and runtime skeleton for deciding whether proposed movement may lawfully bind consequence.
