@@ -6,3 +6,7 @@ venv/
 .env
 .env.*
 .DS_Store
+
+# Generated evidence / attestation outputs
+evidence/out/
+evidence/verification_bundle.json
