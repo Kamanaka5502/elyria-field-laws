@@ -1,8 +1,4 @@
-"""Minimum proof-surface verifier for Elyria Field Laws.
-
-A governance claim is admissible only when the proof surface preserves what
-could not happen: failed movement cannot form protected consequence.
-"""
+"""Minimum proof-surface verifier for consequence-bound governance."""
 
 from __future__ import annotations
 
@@ -36,6 +32,7 @@ class ProofSurface:
     non_allow_outcome: bool
     protected_effect_formed: bool
     prevention_replayable: bool
+    prevention_proven: bool
     failure_class: Optional[str] = None
 
 
@@ -50,15 +47,13 @@ class ProofSurfaceReceipt:
 
 
 def verify_proof_surface(surface: ProofSurface) -> ProofSurfaceReceipt:
-    """Verify the minimum proof surface for consequence-bound governance."""
+    """Verify the minimum proof surface and enforce its prevention obligation."""
 
     trace: List[str] = ["proof_surface.object.present"]
-
     missing = [name for name in REQUIRED_SURFACE_FIELDS if not surface.fields.get(name)]
+
     if missing:
         trace.append("surface_fields.missing:" + ",".join(missing))
-
-    if missing:
         return ProofSurfaceReceipt(
             surface_id=surface.surface_id,
             verdict=ProofSurfaceVerdict.PROOF_SURFACE_INCOMPLETE,
@@ -92,6 +87,17 @@ def verify_proof_surface(surface: ProofSurface) -> ProofSurfaceReceipt:
             rule_trace=trace,
         )
 
+    if surface.non_allow_outcome and not surface.prevention_proven:
+        trace.append("control_surface_only.prevention_not_proven")
+        return ProofSurfaceReceipt(
+            surface_id=surface.surface_id,
+            verdict=ProofSurfaceVerdict.CONTROL_SURFACE_ONLY,
+            proof_surface_valid=False,
+            missing_fields=[],
+            reason="Non-allow outcome lacks a positive prevention result; proof surface cannot be certified.",
+            rule_trace=trace,
+        )
+
     if not surface.prevention_replayable:
         trace.append("control_surface_only.prevention_not_replayable")
         return ProofSurfaceReceipt(
@@ -109,6 +115,6 @@ def verify_proof_surface(surface: ProofSurface) -> ProofSurfaceReceipt:
         verdict=ProofSurfaceVerdict.PROOF_SURFACE_VALID,
         proof_surface_valid=True,
         missing_fields=[],
-        reason="Proof surface preserves movement, standing, protected effect, decision, receipt, and legitimacy replay.",
+        reason="Required fields, outcome consistency, prevention obligation, and replayability checks passed.",
         rule_trace=trace,
     )
