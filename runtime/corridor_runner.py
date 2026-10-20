@@ -91,6 +91,7 @@ def run_corridor(corridor: CorridorInput) -> CorridorReceipt:
         non_allow_outcome=non_allow,
         protected_effect_formed=corridor.effect_formed,
         prevention_replayable=replay_receipt.legitimacy_replay_valid,
+        prevention_proven=effect_receipt.prevention_proven,
         failure_class=corridor.failure_class if non_allow else None,
     )
     proof_receipt = verify_proof_surface(proof_surface)
